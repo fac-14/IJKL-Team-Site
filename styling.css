@@ -1,0 +1,62 @@
+footer {
+    width: 100%;
+    max-width: 780px;
+    margin: auto;
+}
+
+#address-container {
+    display: flex;
+}
+
+#address-container div{
+    padding-right: 20px;
+}
+
+#map {
+    width: 80%;
+}
+
+#contact-card{
+    background-color: aqua;
+    border-radius: 10px;
+    box-shadow:
+}
+#contact-card h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#card-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+#contact-detail{
+    /* background-color: rgb(221, 146, 236); */
+    width: 30%;
+    min-width: 250px;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 250px;
+    /* background-color: rgb(136, 125, 241); */
+}
+
+#copywright{
+    background-color: rgb(243, 130, 158);
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    border: none;  
+    margin: 5px 0 10px; 
+    line-height: 1.5em; 
+    font-size: 1em;
+}
