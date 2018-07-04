@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+main {
+  margin: 2rem;
+}
+.navbar {
+  text-align: right;
+  background-color: orange;
+  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    font-size: 1.5rem;
+  }
+}
