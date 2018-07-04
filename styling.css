@@ -4,6 +4,7 @@ body {
 main {
   margin: 2rem;
 }
+
 .navbar {
   text-align: right;
   background-color: orange;
@@ -16,8 +17,27 @@ main {
   font-size: 1rem;
 }
 
+.navbar svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: black;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   .navbar {
     font-size: 1.5rem;
   }
+  .navbar svg {
+    display: inline;
+  }
+  .navbar .nav-item {
+    display: none;
+  }
+}
+
+#splash {
+  height: 100vh;
 }
