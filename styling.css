@@ -73,6 +73,11 @@ nav a {
   color: black;
 }
 
+#skip-to-main {
+  position: absolute;
+  left: -10000px !important;
+}
+
 /* end of header styling */
 
 /* -------------  About styles ------------- */
@@ -348,5 +353,11 @@ textarea {
   }
   .navbar .nav-item {
     display: none;
+  }
+}
+
+@media (min-width: 1080px) {
+  #background-image svg {
+    margin-top: 10%;
   }
 }
