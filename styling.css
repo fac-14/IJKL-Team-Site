@@ -15,6 +15,14 @@ body {
   font-family: "Ubuntu", sans serif;
 }
 
+.space-div-1 {
+  height: 7vh;
+}
+
+.space-div-2 {
+  height: 14vh;
+}
+
 /* -------------  Header styles ------------- */
 
 .navbar {
@@ -25,7 +33,6 @@ body {
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
   padding-right: 0.5rem;
@@ -36,7 +43,7 @@ body {
 
 #logo {
   font-family: "Plaster", cursive;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   padding: 0 0 0 0.5rem;
 }
 
@@ -52,22 +59,31 @@ body {
 .navbar div {
   padding: 0.5rem;
   display: inline;
+  font-size: 1.5rem;
 }
 
 .nav-item :hover {
   background-color: #39373a;
   color: white;
   cursor: pointer;
+  border-bottom: 1px solid #39373a;
 }
 
 .nav-item :active {
     background-color: #3aa4e4;
     border-bottom: 1px solid #3aa4e4;
+  
 }
 
-.nav-item {
+.nav-item,
+nav a {
   text-decoration: none;
   color: black;
+}
+
+#skip-to-main {
+  position: absolute;
+  left: -10000px !important;
 }
 
 /* end of header styling */
@@ -76,8 +92,8 @@ body {
 
 #background-image {
   background: linear-gradient(
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.3)
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
     ),
     url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=47d2b1f32cc05c976af4a39256e01cba&auto=format&fit=crop&w=1050&q=80");
   height: 100vh;
@@ -96,7 +112,7 @@ body {
 }
 
 #padding-hack {
-  height: 35vh;
+  height: 0vh;
 }
 
 #background-image h1,
@@ -106,8 +122,17 @@ body {
   font-weight: 600;
 }
 
+#background-image svg {
+  min-width: 125px;
+  min-height: 125px;
+  height: 25vh;
+  width: 35%;
+  margin-top: 3.1rem;
+}
+
 #background-image h1 {
   font-size: 2.5rem;
+  text-shadow: -1px 1px white;
 }
 
 #background-image article {
@@ -133,6 +158,7 @@ article p {
 }
 
 .team h1 {
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -238,7 +264,7 @@ footer {
 }
 #contact-card h1 {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 #card-content {
   display: flex;
@@ -332,24 +358,15 @@ textarea {
 
 /* ------------- Media Queries ------------- */
 
-@media (max-width: 694px) {
+@media screen and (min-width: 551px) and (max-width: 694px) {
   #contact-form {
     padding-top: 20px;
     border-top: 2px solid gray;
     margin-top: 30px;
   }
-}
-
-@media screen and (max-width: 450px) {
-  .navbar svg {
-    display: inline;
-  }
-  .navbar .nav-item {
-    display: none;
-  }
   #background-image h1,
   #background-image article {
-    padding: 0 2rem !important;
+    padding: 0 4rem !important;
   }
   #background-image h1 {
     font-size: 2rem !important;
@@ -358,6 +375,44 @@ textarea {
     font-size: 1rem !important;
   }
   #padding-hack {
-    height: 30vh !important; /* ** have more gradations ** */
+    height: 0vh !important; /* ** have more gradations ** */
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #background-image h1,
+  #background-image article {
+    padding: 0 4rem !important;
+  }
+  #background-image h1 {
+    font-size: 2rem !important;
+  }
+  #background-image article {
+    font-size: 1rem !important;
+  }
+  #padding-hack {
+    height: 0vh !important; /* ** have more gradations ** */
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #background-image h1,
+  #background-image article {
+    padding: 0 2rem !important;
+  }
+  #background-image h1 {
+    font-size: 2rem !important;
+  }
+  .navbar svg {
+    display: inline;
+  }
+  .navbar .nav-item {
+    display: none;
+  }
+}
+
+@media (min-width: 1080px) {
+  #background-image svg {
+    margin-top: 10%;
   }
 }
