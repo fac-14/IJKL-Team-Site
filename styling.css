@@ -57,6 +57,12 @@ body {
 .nav-item :hover {
   background-color: #39373a;
   color: white;
+  cursor: pointer;
+}
+
+.nav-item :active {
+    background-color: #3aa4e4;
+    border-bottom: 1px solid #3aa4e4;
 }
 
 .nav-item {
@@ -302,6 +308,19 @@ textarea {
   color: white;
   border-radius: 5px;
   padding: 8px 0;
+  box-shadow: 0 3px 0 #21597c;
+  position: relative;
+  outline-color: lightgrey;
+}
+
+#send-btn:hover {
+    cursor: pointer;
+}
+
+#send-btn:active {
+    box-shadow: none;
+    top: 3px;
+    outline: 0;
 }
 
 /* End of form styles */
