@@ -2,42 +2,53 @@ body {
   margin: 0;
 }
 main {
-  margin: 2rem;
+  margin-top: 2.9rem;
 }
 
 .navbar {
   text-align: right;
   background-color: orange;
-  padding: 0.5rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0.5rem;
+  padding: 0;
+}
+
+#logo {
+  font-family: "Plaster", cursive;
+  font-size: 2.2rem;
+  padding: 0 0 0 0.5rem;
 }
 
 .navbar svg {
-  height: 1.5rem;
+  height: 1.2rem;
   width: 1.5rem;
   color: black;
   margin-left: 1rem;
-  margin-top: 0.5rem;
   display: none;
+  padding-right: 0.5rem;
 }
 
-@media screen and (max-width: 600px) {
-  .navbar {
-    font-size: 1.5rem;
-  }
+.navbar div {
+  padding: 0.5rem;
+  display: inline;
+}
+
+.nav-item :hover {
+  background-color: hotpink;
+}
+
+@media screen and (max-width: 450px) {
   .navbar svg {
     display: inline;
   }
   .navbar .nav-item {
     display: none;
   }
-}
-
-#splash {
-  height: 100vh;
 }
