@@ -52,3 +52,111 @@ main {
     display: none;
   }
 }
+
+/* -------------  Card/Footer styling ------------- */
+
+footer {
+  margin: auto;
+  background: repeating-linear-gradient(
+    180deg,
+    white,
+    white 30%,
+    rgb(60, 209, 137) 30%,
+    rgb(60, 209, 137) 100%
+  );
+}
+
+#contact-card {
+  width: 95%;
+  max-width: 780px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.1);
+}
+#contact-card h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+#card-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+/* -------------  Contact info styles ------------- */
+
+#contact-detail {
+  width: 30%;
+  min-width: 250px;
+}
+
+#map {
+  width: 80%;
+}
+
+td {
+  padding: 10px 10px 10px 0px;
+}
+
+#contact-detail h5 {
+  margin: 0px;
+}
+
+/* End of contact info styles */
+
+/* ------------- Form styles ------------- */
+
+#contact-form {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-width: 250px;
+}
+
+#contact-form h3 {
+  margin: 0;
+  padding: 10px 10px 10px 0px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  border: none;
+  margin: 5px 0 10px;
+  line-height: 1.5em;
+  font-size: 1em;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+}
+
+#send-btn {
+  border: none;
+  background-color: rgb(193, 36, 112);
+  font-size: 1em;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 0;
+}
+
+/* End of form styles */
+
+#copywright {
+  text-align: center;
+  padding: 20px;
+}
+
+/* ------------- Media Queries ------------- */
+
+@media (max-width: 694px) {
+  #contact-form {
+    padding-top: 20px;
+    border-top: 2px solid gray;
+    margin-top: 30px;
+  }
+}
