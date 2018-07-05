@@ -2,6 +2,7 @@
 dark-blue: #3aa4e4;
 light-blue: #5ebecc;
 red: #d44429;
+lighter version of red: rgb(214, 86, 64);
 yellow: #E9A541;
 light-brown: #b9724a;
 grey: #cfc3b9;
@@ -64,7 +65,14 @@ body {
 .nav-item :hover {
   background-color: #39373a;
   color: white;
+  cursor: pointer;
   border-bottom: 1px solid #39373a;
+}
+
+.nav-item :active {
+    background-color: #3aa4e4;
+    border-bottom: 1px solid #3aa4e4;
+  
 }
 
 .nav-item,
@@ -159,18 +167,47 @@ article p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 1040px;
+  margin: auto;
 }
 
 .team-item {
   width: 48%;
   height: 215px;
-  background-color: rgb(60, 209, 137);
+  background: repeating-linear-gradient(
+    180deg,
+    #eaf4fa,
+    #e1eaf0 25%,
+    #E9A541 25%,
+    #E9A541 100%
+  );
   margin: 5px;
   display: flex;
+  border-radius: 10px;
+  border: 1px solid #CFC3B9;
+}
+
+.team-item a {
+    text-decoration: none;
+    color: black;
+    line-height: 1.25rem;
+}
+
+.team-item a:hover {
+    text-decoration: underline;
+}
+
+.team-item li {
+    list-style-type: square;
+}
+
+.team-item i {
+    padding-right: 5px;
 }
 
 .team-item img {
   max-height: 100%;
+  border-radius: 10px 0 0 10px;
 }
 
 .team-item div {
@@ -200,6 +237,7 @@ article p {
   .team-item img {
     width: 100%;
     height: 100%;
+    border-radius: 10px 10px 0 0;
   }
 }
 
@@ -211,8 +249,8 @@ footer {
     180deg,
     white,
     white 30%,
-    #e9a541 30%,
-    #e9a541 100%
+    #D56062 30%,
+    #D56062 100%
   );
 }
 
@@ -242,6 +280,10 @@ footer {
 #contact-detail {
   width: 30%;
   min-width: 250px;
+  text-align: center;
+}
+table {
+    margin: auto;
 }
 
 #map {
@@ -287,11 +329,24 @@ textarea {
 
 #send-btn {
   border: none;
-  background-color: #d44429;
+  background-color: #3aa4e4;
   font-size: 1em;
   color: white;
   border-radius: 5px;
   padding: 8px 0;
+  box-shadow: 0 3px 0 #21597c;
+  position: relative;
+  outline-color: lightgrey;
+}
+
+#send-btn:hover {
+    cursor: pointer;
+}
+
+#send-btn:active {
+    box-shadow: none;
+    top: 3px;
+    outline: 0;
 }
 
 /* End of form styles */
