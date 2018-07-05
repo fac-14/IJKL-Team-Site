@@ -1,3 +1,9 @@
+/* -- SCSS -- 
+
+$color-light-blue: #5ebecc;
+$color-red: #d44429;
+$ */
+
 body {
   margin: 0;
   font-family: "Ubuntu", sans serif;
@@ -7,7 +13,7 @@ body {
 
 .navbar {
   text-align: right;
-  background-color: orange;
+  background-color: #5ebecc;
   position: fixed;
   top: 0;
   left: 0;
@@ -125,15 +131,6 @@ article p {
   border: 0 solid black;
   border-width: 0.2em 0em;
 }
-/*
-article p:after {
-  content: "";
-  position: absolute;
-  top: -0.25em;
-  right: 100%;
-  bottom: -0.25em;
-  width: 0.25em;
-} */
 
 /* -------------  Card/Footer styling ------------- */
 
