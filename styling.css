@@ -53,6 +53,66 @@ main {
   }
 }
 
+/* -------------  Team section styling ------------ */
+
+.team {
+  width: 90vw;
+  margin: auto;
+}
+
+.team h1 {
+  text-align: center;
+}
+
+.team-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-item {
+  width: 48%;
+  height: 215px;
+  background-color: rgb(60, 209, 137);
+  margin: 5px;
+  display: flex;
+}
+
+.team-item img {
+  max-height: 100%;
+}
+
+.team-item div {
+  text-align: left;
+  padding: 10px;
+  min-width: 172px;
+}
+
+.team-item div h2 {
+  margin-top: 5px;
+}
+
+@media (max-width: 956px) {
+  .team-item {
+    width: 100%;
+  }
+  .team-box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .team-item {
+    flex-direction: column;
+    height: 100%;
+  }
+  .team-item img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 /* -------------  Card/Footer styling ------------- */
 
 footer {
