@@ -56,8 +56,12 @@ main {
 /* -------------  Team section styling ------------ */
 
 .team {
-  width: 80vw;
+  width: 90vw;
   margin: auto;
+}
+
+.team h1 {
+  text-align: center;
 }
 
 .team-box {
@@ -68,7 +72,7 @@ main {
 }
 
 .team-item {
-  width: 45%;
+  width: 48%;
   height: 215px;
   background-color: rgb(60, 209, 137);
   margin: 5px;
@@ -76,10 +80,20 @@ main {
 }
 
 .team-item img {
-  max-height: 215px;
+  max-height: 100%;
 }
 
-@media (max-width: 694px) {
+.team-item div {
+  text-align: left;
+  padding: 10px;
+  min-width: 172px;
+}
+
+.team-item div h2 {
+  margin-top: 5px;
+}
+
+@media (max-width: 956px) {
   .team-item {
     width: 100%;
   }
@@ -87,6 +101,12 @@ main {
     flex-direction: column;
   }
 }
+
+/* @media (max-width: 450px) { 
+  .team-item {
+    flex-direction: column;
+  }
+}/*
 
 /* -------------  Card/Footer styling ------------- */
 
