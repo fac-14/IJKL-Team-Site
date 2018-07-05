@@ -102,11 +102,16 @@ main {
   }
 }
 
-/* @media (max-width: 450px) { 
+@media (max-width: 450px) {
   .team-item {
     flex-direction: column;
+    height: 100%;
   }
-}/*
+  .team-item img {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 /* -------------  Card/Footer styling ------------- */
 
