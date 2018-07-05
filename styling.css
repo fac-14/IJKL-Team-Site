@@ -53,6 +53,41 @@ main {
   }
 }
 
+/* -------------  Team section styling ------------ */
+
+.team {
+  width: 80vw;
+  margin: auto;
+}
+
+.team-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-item {
+  width: 45%;
+  height: 215px;
+  background-color: rgb(60, 209, 137);
+  margin: 5px;
+  display: flex;
+}
+
+.team-item img {
+  max-height: 215px;
+}
+
+@media (max-width: 694px) {
+  .team-item {
+    width: 100%;
+  }
+  .team-box {
+    flex-direction: column;
+  }
+}
+
 /* -------------  Card/Footer styling ------------- */
 
 footer {
