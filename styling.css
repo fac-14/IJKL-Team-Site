@@ -1,15 +1,20 @@
-/* -- SCSS -- 
-
-$color-light-blue: #5ebecc;
-$color-red: #d44429;
-$ */
+/*
+dark-blue: #3aa4e4;
+light-blue: #5ebecc;
+red: #d44429;
+yellow: #E9A541;
+light-brown: #b9724a;
+grey: #cfc3b9;
+pink: #e9ccaf;
+coffee: #39373a;
+*/
 
 body {
   margin: 0;
   font-family: "Ubuntu", sans serif;
 }
 
-/* -- header styling -- */
+/* -------------  Header styles ------------- */
 
 .navbar {
   text-align: right;
@@ -49,7 +54,8 @@ body {
 }
 
 .nav-item :hover {
-  background-color: hotpink;
+  background-color: #39373a;
+  color: white;
 }
 
 .nav-item {
@@ -57,29 +63,9 @@ body {
   color: black;
 }
 
-@media screen and (max-width: 450px) {
-  .navbar svg {
-    display: inline;
-  }
-  .navbar .nav-item {
-    display: none;
-  }
-  #background-image h1,
-  #background-image article {
-    padding: 0 2rem !important;
-  }
-  #background-image h1 {
-    font-size: 2rem !important;
-  }
-  #background-image article {
-    font-size: 1rem !important;
-  }
-  #padding-hack {
-    height: 30vh !important;
-  }
-}
+/* end of header styling */
 
-/* -- about styling -- */
+/* -------------  About styles ------------- */
 
 #background-image {
   background: linear-gradient(
@@ -140,8 +126,8 @@ footer {
     180deg,
     white,
     white 30%,
-    rgb(60, 209, 137) 30%,
-    rgb(60, 209, 137) 100%
+    #e9a541 30%,
+    #e9a541 100%
   );
 }
 
@@ -216,7 +202,7 @@ textarea {
 
 #send-btn {
   border: none;
-  background-color: rgb(193, 36, 112);
+  background-color: #d44429;
   font-size: 1em;
   color: white;
   border-radius: 5px;
@@ -237,5 +223,27 @@ textarea {
     padding-top: 20px;
     border-top: 2px solid gray;
     margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar svg {
+    display: inline;
+  }
+  .navbar .nav-item {
+    display: none;
+  }
+  #background-image h1,
+  #background-image article {
+    padding: 0 2rem !important;
+  }
+  #background-image h1 {
+    font-size: 2rem !important;
+  }
+  #background-image article {
+    font-size: 1rem !important;
+  }
+  #padding-hack {
+    height: 30vh !important; /* ** have more gradations ** */
   }
 }
