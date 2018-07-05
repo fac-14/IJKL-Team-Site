@@ -1,9 +1,9 @@
 body {
   margin: 0;
+  font-family: "Ubuntu", sans serif;
 }
-main {
-  margin-top: 2.9rem;
-}
+
+/* -- header styling -- */
 
 .navbar {
   text-align: right;
@@ -18,6 +18,8 @@ main {
   justify-content: space-between;
   padding-right: 0.5rem;
   padding: 0;
+  z-index: 10;
+  font-family: "Ubuntu", sans-serif;
 }
 
 #logo {
@@ -44,6 +46,11 @@ main {
   background-color: hotpink;
 }
 
+.nav-item {
+  text-decoration: none;
+  color: black;
+}
+
 @media screen and (max-width: 450px) {
   .navbar svg {
     display: inline;
@@ -51,7 +58,82 @@ main {
   .navbar .nav-item {
     display: none;
   }
+  #background-image h1,
+  #background-image article {
+    padding: 0 2rem !important;
+  }
+  #background-image h1 {
+    font-size: 2rem !important;
+  }
+  #background-image article {
+    font-size: 1rem !important;
+  }
+  #padding-hack {
+    height: 30vh !important;
+  }
 }
+
+/* -- about styling -- */
+
+#background-image {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=47d2b1f32cc05c976af4a39256e01cba&auto=format&fit=crop&w=1050&q=80");
+  height: 100vh;
+  width: 100%;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 90%,
+    65% 90%,
+    50% 100%,
+    35% 90%,
+    0% 90%
+  );
+  text-align: center;
+  background-size: cover;
+}
+
+#padding-hack {
+  height: 35vh;
+}
+
+#background-image h1,
+#background-image article {
+  z-index: 9;
+  padding: 0 10rem;
+  font-weight: 600;
+}
+
+#background-image h1 {
+  font-size: 2.5rem;
+}
+
+#background-image article {
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+article p {
+  background-color: black;
+  color: white;
+  line-height: 1.8;
+  display: inline;
+  /* white-space: pre-wrap; */
+  border: 0 solid black;
+  border-width: 0.2em 0em;
+}
+/*
+article p:after {
+  content: "";
+  position: absolute;
+  top: -0.25em;
+  right: 100%;
+  bottom: -0.25em;
+  width: 0.25em;
+} */
 
 /* -------------  Card/Footer styling ------------- */
 
