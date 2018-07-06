@@ -102,10 +102,6 @@ nav a {
   background-size: cover;
 }
 
-#padding-hack {
-  height: 0vh;
-}
-
 #background-image h1,
 #background-image article {
   z-index: 9;
@@ -370,9 +366,6 @@ textarea {
   #background-image article {
     font-size: 1rem !important;
   }
-  #padding-hack {
-    height: 0vh !important; /* ** have more gradations ** */
-  }
 }
 
 @media screen and (max-width: 550px) {
@@ -385,9 +378,6 @@ textarea {
   }
   #background-image article {
     font-size: 1rem !important;
-  }
-  #padding-hack {
-    height: 0vh !important; /* ** have more gradations ** */
   }
 }
 
