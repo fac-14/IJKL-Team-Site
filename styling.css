@@ -48,6 +48,10 @@ body {
   padding-right: 0.5rem;
 }
 
+.mobile-icon{
+  display: none;
+}
+
 .navbar div {
   padding: 0.5rem;
   display: inline;
@@ -396,6 +400,9 @@ textarea {
     font-size: 0.8rem !important;
   }
   .navbar svg {
+    display: inline;
+  }
+  .mobile-icon{
     display: inline;
   }
   .navbar .nav-item {
