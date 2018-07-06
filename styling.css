@@ -328,6 +328,7 @@ textarea {
 }
 
 #send-btn {
+  width: 100%;
   border: none;
   background-color: #3aa4e4;
   font-size: 1em;
