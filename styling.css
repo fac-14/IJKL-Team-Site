@@ -351,12 +351,15 @@ textarea {
 
 /* ------------- Media Queries ------------- */
 
-@media screen and (min-width: 551px) and (max-width: 694px) {
+@media screen and (min-width: 551px) and (max-width: 657px) {
   #contact-form {
     padding-top: 20px;
     border-top: 2px solid gray;
     margin-top: 30px;
   }
+}
+
+@media screen and (min-width: 551px) and (max-width: 725px) {
   #background-image h1,
   #background-image article {
     padding: 0 4rem !important;
@@ -388,7 +391,10 @@ textarea {
     padding: 0 2rem !important;
   }
   #background-image h1 {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
+  }
+  #background-image article {
+    font-size: 0.8rem !important;
   }
   .navbar svg {
     display: inline;
