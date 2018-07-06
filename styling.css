@@ -228,6 +228,7 @@ article p {
   .team-item {
     flex-direction: column;
     height: 100%;
+    margin: 5px 0;
   }
   .team-item img {
     width: 100%;
