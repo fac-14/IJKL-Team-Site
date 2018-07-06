@@ -15,14 +15,6 @@ body {
   font-family: "Ubuntu", sans serif;
 }
 
-.space-div-1 {
-  height: 7vh;
-}
-
-.space-div-2 {
-  height: 14vh;
-}
-
 /* -------------  Header styles ------------- */
 
 .navbar {
@@ -70,9 +62,8 @@ body {
 }
 
 .nav-item :active {
-    background-color: #3aa4e4;
-    border-bottom: 1px solid #3aa4e4;
-  
+  background-color: #3aa4e4;
+  border-bottom: 1px solid #3aa4e4;
 }
 
 .nav-item,
@@ -109,10 +100,6 @@ nav a {
   );
   text-align: center;
   background-size: cover;
-}
-
-#padding-hack {
-  height: 0vh;
 }
 
 #background-image h1,
@@ -152,6 +139,10 @@ article p {
 
 /* -------------  Team section styling ------------ */
 
+.team h1 {
+  margin-top: 7vh;
+}
+
 .team {
   width: 90vw;
   margin: auto;
@@ -178,31 +169,31 @@ article p {
     180deg,
     #eaf4fa,
     #e1eaf0 25%,
-    #E9A541 25%,
-    #E9A541 100%
+    #e9a541 25%,
+    #e9a541 100%
   );
   margin: 5px;
   display: flex;
   border-radius: 10px;
-  border: 1px solid #CFC3B9;
+  border: 1px solid #cfc3b9;
 }
 
 .team-item a {
-    text-decoration: none;
-    color: black;
-    line-height: 1.25rem;
+  text-decoration: none;
+  color: black;
+  line-height: 1.25rem;
 }
 
 .team-item a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .team-item li {
-    list-style-type: square;
+  list-style-type: square;
 }
 
 .team-item i {
-    padding-right: 5px;
+  padding-right: 5px;
 }
 
 .team-item img {
@@ -249,8 +240,8 @@ footer {
     180deg,
     white,
     white 30%,
-    #D56062 30%,
-    #D56062 100%
+    #d56062 30%,
+    #d56062 100%
   );
 }
 
@@ -258,6 +249,7 @@ footer {
   width: 95%;
   max-width: 780px;
   margin: auto;
+  margin-top: 14vh;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.1);
@@ -283,7 +275,7 @@ footer {
   text-align: center;
 }
 table {
-    margin: auto;
+  margin: auto;
 }
 
 #map {
@@ -340,13 +332,13 @@ textarea {
 }
 
 #send-btn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #send-btn:active {
-    box-shadow: none;
-    top: 3px;
-    outline: 0;
+  box-shadow: none;
+  top: 3px;
+  outline: 0;
 }
 
 /* End of form styles */
@@ -374,9 +366,6 @@ textarea {
   #background-image article {
     font-size: 1rem !important;
   }
-  #padding-hack {
-    height: 0vh !important; /* ** have more gradations ** */
-  }
 }
 
 @media screen and (max-width: 550px) {
@@ -389,9 +378,6 @@ textarea {
   }
   #background-image article {
     font-size: 1rem !important;
-  }
-  #padding-hack {
-    height: 0vh !important; /* ** have more gradations ** */
   }
 }
 
