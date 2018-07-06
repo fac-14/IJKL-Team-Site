@@ -280,6 +280,7 @@ table {
 
 #map {
   width: 80%;
+  border-radius: 5px;
 }
 
 td {
@@ -302,14 +303,10 @@ td {
   min-width: 250px;
 }
 
-#contact-form h3 {
-  margin: 0;
-  padding: 10px 10px 10px 0px;
-}
-
 input[type="text"],
 input[type="email"],
 textarea {
+  box-sizing: border-box;
   width: 100%;
   border: none;
   margin: 5px 0 10px;
@@ -317,9 +314,12 @@ textarea {
   font-size: 1em;
   background-color: #ecf0f1;
   border-radius: 5px;
+  resize: none;
+  padding-left: 7px;
 }
 
 #send-btn {
+  width: 100%;
   border: none;
   background-color: #3aa4e4;
   font-size: 1em;

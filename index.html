@@ -147,40 +147,41 @@
           <table>
             <tr>
               <td>
-                <h5>Phone No:</h5>
+                <td>Phone No:</td>
               </td>
               <td>01584 853312</td>
             </tr>
             <tr>
               <td>
-                <h5>Mobile:</h5>
+                <td>Mobile:</td>
               </td>
               <td>07530 635445</td>
             </tr>
             <tr>
               <td>
-                <h5>Address:</h5>
+                <td>Address:</td>
               </td>
               <td>Space4,
                 <br> Fonthill Road,
-                <br> Finsbury Park</td>
+                <br> Finsbury Park, 
+                <br> N4 3HF</td>
             </tr>
           </table>
-          <img id="map" src="https://i2-prod.getwestlondon.co.uk/incoming/article9313114.ece/ALTERNATES/s615/Untitled.jpg" alt="map">
+          <a target="_blank" href="https://www.google.co.uk/maps/place/Space4/@51.5650373,-0.1093655,16z/data=!4m5!3m4!1s0x48761b9b12fe3fa9:0x79ea2feca65a37cc!8m2!3d51.5637478!4d-0.1079005">
+            <img id="map" src="images/map.png" alt="map">
+          </a>
         </div>
-        <div id="contact-form">
-          <form action="post">
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Anesta Robbins">
-            <br>
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="anester@gmail.com">
-            <br>
-            <label for="message">Message</label>
-            <textarea name="" id="message" cols="30" rows="5"></textarea>
-          </form>
+        <form action="post" id="contact-form">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Anesta Robbins" required>
+          <br>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="anester@gmail.com" required>
+          <br>
+          <label for="message">Message</label>
+          <textarea name="" id="message" cols="30" rows="5" required></textarea>
           <button id="send-btn">Send</button>
-        </div>
+        </form>
       </div>
     </div>
     <div id="copywright">
